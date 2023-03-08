@@ -1,0 +1,792 @@
+/* UNIVERSAL SELECTOR * Wag po tau magedit sa main.css*
+/**************SIR ALEX CSS FILES*******************/
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arvo", serif;
+}
+
+.frontpage h2 {
+  border-bottom: 3mm ridge goldenrod;
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 4.5rem;
+  color: white;
+}
+
+.carousel {
+  margin-top: 100px;
+  margin-bottom: 2px;
+  height: 1000px;
+  width: 1000px;
+  border-radius: 10px;
+  justify-content: center;
+}
+.carousel h2 {
+  margin: 100px auto 50px;
+  text-align: center;
+}
+
+.frontparagraph p {
+  color: black;
+}
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.recipe-container iframe {
+  height: 500px;
+  width: 600px;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.recipe-container {
+  height: 100%;
+  width: 100%;
+  margin: 50px auto;
+  padding: 5px;
+  border: 1px solid goldenrod;
+}
+.recipe-container .row {
+  padding: 5px;
+  margin: 20px auto;
+}
+.recipe-container .col, .recipe-container .col-8, .recipe-container .col-4, .recipe-container .col-7, .recipe-container .col-5 {
+  padding: 10px 20px;
+}
+.recipe-container h2 {
+  border-bottom: 1px double goldenrod;
+}
+.recipe-container h2, .recipe-container h3, .recipe-container h4, .recipe-container h5 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.recipe-row img {
+  border-radius: 50px;
+  height: 600px;
+  width: 400px;
+  margin: 20px auto;
+  box-shadow: 18px 19px 20px 1px rgb(0, 0, 0);
+  -webkit-box-shadow: 18px 19px 20px 1px rgb(0, 0, 0);
+  font-size: 15px;
+}
+.recipe-row li {
+  font-size: 22px;
+}
+
+.ingredients-container {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+/* FRONT PAGE TITLE ANIMATION */
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+h2, h3, h4, h5 {
+  color: black;
+}
+
+.title h2 {
+  text-align: center;
+  justify-content: center;
+}
+
+div ul iframe {
+  border-radius: 50px;
+  box-shadow: 1px 4px 41px 12px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 1px 4px 41px 12px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 1px 4px 41px 12px rgba(0, 0, 0, 0.51);
+}
+
+/* carousel */
+.carousel h5 {
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* Front Page Picture Boxes */
+/*boxes position  boxes position  boxes position*/
+.hover-box1, .hover-box2, .hover-box3, .hover-box4, .hover-box5, .hover-box6, .image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 120px;
+  transition: all ease 0.2s;
+  box-shadow: -16px 26px 45px -16px rgba(2, 1, 1, 0.4431372549);
+  -webkit-box-shadow: -16px 26px 45px -16px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: -16px 26px 45px -16px rgba(0, 0, 0, 0.53);
+}
+
+/*box 1  box 1  box 1*/
+.hover-box1 {
+  background-image: url(https://www.jessicagavin.com/wp-content/uploads/2020/06/cuts-of-beef-12.jpg);
+}
+
+.hover-box1 .content, .hover-box2 .content, .hover-box3 .content, .hover-box4 .content, .hover-box5 .content, .hover-box6 .content, .image .content {
+  min-height: 300px;
+  padding: 40px;
+  color: black;
+}
+
+.hover-box1 .overlay, .hover-box2 .overlay, .hover-box3 .overlay, .hover-box4 .overlay, .hover-box5 .overlay, .hover-box6 .overlay, .image .overlay {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(219, 209, 209, 0.6) 0%, rgba(233, 173, 173, 0.1) 100%);
+  border-radius: 120px;
+}
+
+.hover-box1:hover, .hover-box2:hover, .hover-box3:hover, .hover-box4:hover, .hover-box5:hover, .hover-box6:hover, .image:hover {
+  transform: translateY(-20px);
+}
+
+/* box 2  box 2  box 2*/
+.hover-box2 {
+  background-image: url(https://poultry.mystagingwebsite.com/wp-content/uploads/2019/02/shutterstock_531404539-1024x684.jpg);
+}
+
+/*box 3  box 3  box 3*/
+.hover-box3 {
+  background-image: url(https://img.freepik.com/free-photo/healthy-vegetables-wooden-table_1150-38014.jpg);
+}
+
+/*box 4  box 4  box 4*/
+.hover-box4 {
+  background-image: url(https://www.knorr.com/content/dam/unilever/knorr_world/philippines/photography_and_pictures/an_assortment_of_different_cuts_of_pork_with_a_bottle_of_olive_oil_and_herbs_as_decorations-79600683-jpg.jpg);
+}
+
+/*box 5  box 5  box 5*/
+.hover-box5 {
+  background-image: url(https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/vleff2sg7clk9kizo6qr.jpg);
+}
+
+/*box 6  box 6  box 6*/
+.hover-box6 {
+  background-image: url(https://media.karousell.com/media/photos/products/2020/5/25/home_made_filipino_desserts_1590397580_57183258_progressive.jpg);
+}
+
+.title h2 {
+  text-align: center;
+  justify-content: center;
+  border-bottom: 2mm ridge rgba(211, 220, 50, 0.6);
+}
+
+div ul {
+  color: #fff;
+  margin-top: 20px;
+  list-style: none;
+}
+
+iframe {
+  border-radius: 50px;
+  box-shadow: 1px 4px 41px 12px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 1px 4px 41px 12px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 1px 4px 41px 12px rgba(0, 0, 0, 0.51);
+}
+
+/* carousel */
+.carousel h5 {
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/**************EM CSS FILES*******************/
+body {
+  background-color: goldenrod;
+}
+
+/* video banner */
+#video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* set the height of the video banner */
+}
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* make the video fill the container */
+}
+
+#front-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#front-content h1 {
+  font-size: 5.5rem;
+  color: goldenrod;
+  font-weight: 700;
+}
+
+.blog-title {
+  background-color: rgba(255, 255, 255, 0.858);
+  font-weight: 500;
+  margin: auto;
+  padding: 10px;
+}
+
+.flex-grow-1 {
+  color: white;
+  margin: 15px auto;
+}
+
+.card-text {
+  color: black;
+  font-weight: 500;
+}
+
+.blog-intro {
+  margin: 10px auto;
+  max-width: 500px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.home-btn {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.nav-link:hover {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.recipe-container p {
+  color: black;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home-logo {
+  max-width: 20%;
+}
+
+.procedure-list {
+  color: white;
+}
+
+.terms-container p {
+  font-size: 22px;
+}
+
+.privacy-container {
+  font-size: 20px;
+}
+
+.star-container, .star-container1, .star-container2 {
+  padding: 10px 20px;
+}
+
+.star-container h2, .star-container1 h2, .star-container2 h2 {
+  color: white;
+  font-size: 1.9rem;
+}
+
+.star-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+h1 {
+  color: black;
+  font-weight: bold;
+}
+
+.title h1 {
+  margin-top: 100px;
+}
+
+.title h1:hover, .arrow {
+  color: fff;
+  text-shadow: 0 0 10px black, 0 0 20px black, 0 0 40px goldenrod;
+}
+
+/* SAMPLE RATING FORM  Per Recipe pages*/
+.star-container {
+  position: relative;
+  width: 400px;
+  background: #111;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.star-container .post {
+  display: none;
+}
+
+.star-container .text {
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+
+.star-container .edit {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.star-container .edit:hover {
+  text-decoration: underline;
+}
+
+.star-container .star-widget input {
+  display: none;
+}
+
+.star-widget label {
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+
+.star-widget input:not(:checked) ~ label:hover,
+.star-widget input:not(:checked) ~ label:hover ~ label {
+  color: #fd4;
+}
+
+.star-widget input:checked ~ label {
+  color: #fd4;
+}
+
+#rate-5:checked ~ label {
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+
+#rate-1:checked ~ .forms header:before {
+  content: "I just hate it ";
+}
+
+#rate-2:checked ~ .forms header:before {
+  content: "I don't like it ";
+}
+
+#rate-3:checked ~ .forms header:before {
+  content: "It is awesome ";
+}
+
+#rate-4:checked ~ .forms header:before {
+  content: "I just like it ";
+}
+
+#rate-5:checked ~ .forms header:before {
+  content: "I just love it ";
+}
+
+.star-container .forms {
+  display: none;
+}
+
+.star-widget input:checked ~ .forms {
+  display: block;
+}
+
+.forms header {
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.forms .text-area {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.forms .text-area textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+
+.text-area textarea:focus {
+  border-color: #444;
+}
+
+.forms .btns {
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+button[name=star-submit] {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #444;
+  outline: none;
+  background: #fff;
+  color: rgb(72, 72, 72);
+  font-size: 17px;
+  font-weight: 500px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btns:hover {
+  background: #1b1b1b;
+}
+
+.star-container1, .star-container2 {
+  position: relative;
+  width: 400px;
+  background: #111;
+  padding: 20px 20px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.star-container1 .post1, .star-container2 .post2 {
+  display: none;
+}
+
+.star-container1 .text1, .star-container2 .text2 {
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+
+.star-container1 .edit1, .star-container2 .edit2 {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.star-container1 .edit1:hover, .star-container2 .edit2:hover {
+  text-decoration: underline;
+}
+
+.star-container1 .star-widget1 input, .star-container2 .star-widget2 input {
+  display: none;
+}
+
+.star-widget1 label, .star-widget2 label {
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+
+.star-widget1 input:not(:checked) ~ label:hover,
+.star-widget1 input:not(:checked) ~ label:hover ~ label, .star-widget2 input:not(:checked) ~ label:hover,
+.star-widget2 input:not(:checked) ~ label:hover ~ label {
+  color: #fd4;
+}
+
+.star-widget1 input:checked ~ label, .star-widget2 input:checked ~ label {
+  color: #fd4;
+}
+
+#rated-5:checked ~ label, #ratd-5:checked ~ label {
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+
+#rated-1:checked ~ .forms1 header:before, #ratd-1:checked ~ .forms2 header:before {
+  content: "I just hate it ";
+}
+
+#rated-2:checked ~ .forms1 header:before, #ratd-2:checked ~ .forms2 header:before {
+  content: "I don't like it ";
+}
+
+#rated-3:checked ~ .forms1 header:before, #ratd-3:checked ~ .forms2 header:before {
+  content: "It is awesome ";
+}
+
+#rated-4:checked ~ .forms1 header:before, #ratd-4:checked ~ .forms2 header:before {
+  content: "I just like it ";
+}
+
+#rated-5:checked ~ .forms1 header:before, #ratd-5:checked ~ .forms2 header:before {
+  content: "I just love it ";
+}
+
+.star-container1 .forms1, .star-container2 .forms2 {
+  display: none;
+}
+
+.star-widget1 input:checked ~ .forms1, .star-widget2 input:checked ~ .forms2 {
+  display: block;
+}
+
+.forms1 header, .forms2 header {
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.forms1 .text-area1, .forms2 .text-area2 {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.forms1 .text-area1 textarea, .forms2 .text-area2 textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+
+.text-area1 textarea:focus, .text-area2 textarea:focus {
+  border-color: #444;
+}
+
+.forms1 .btns1, .forms2 .btns2 {
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+button[name=star-submit1] {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: #fff;
+  color: rgb(72, 72, 72);
+  font-size: 17px;
+  font-weight: 500px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btns1:hover, .btns2:hover {
+  background: #1b1b1b;
+}
+
+/*ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US*/
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.contact {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/*FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
+footer {
+  background-color: black;
+}
+
+section li {
+  list-style: none;
+  padding: 5px auto;
+  justify-self: center;
+}
+section a {
+  color: pink;
+  text-decoration: none;
+  font-size: 17px;
+}
+section .logo {
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  border: 1px solid black;
+  border-radius: 100px;
+}
+
+footer h3, footer h4 {
+  color: goldenrod;
+}
+
+.newsletters {
+  background-color: white;
+}
+
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+/* For mobile phones: */
+[class*=col-] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
