@@ -6,6 +6,10 @@
   font-family: "Arvo", serif;
 }
 
+.navbar-toggler {
+  background-color: goldenrod;
+}
+
 .main h1 {
   border-bottom: 3mm ridge white;
   width: 70%;
@@ -25,6 +29,11 @@
 /**************EM CSS FILES*******************/
 body {
   background-color: goldenrod;
+}
+
+.navlogo {
+  width: 50px;
+  height: 50px;
 }
 
 /* video banner */
@@ -227,17 +236,14 @@ footer {
 }
 
 .random, .categories, .about, .home{
-  width: 10rem;
+  width: 9.5rem;
   height: 40px;
-  margin: auto;
+  margin: 0px 8px;
   background-color: goldenrod;
   color: black;
   border-radius: 10px;
-  font-weight: 600;
+  font-weight: 700;
   border-width: 0ch;
-  margin-bottom: 35px;
-  margin-top: 25px;
-  margin-right: 20px;
 }
 
 .random:hover,  .categories:hover, .about:hover, .home:hover{

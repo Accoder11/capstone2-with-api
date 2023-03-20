@@ -45,7 +45,7 @@
                 <div class="col-12 col-md-4">
                     <div id="front-content" class="text-center">
                         <h1>HAK Food Blog</h1>
-                    
+
                         <p class="blog-intro">
                             Welcome to our recipe blog website! Our goal is to
                             provide you with a wide variety of delicious and
@@ -62,59 +62,69 @@
         <!-- Navbar -->
 
         <header class="sticky-top">
-            <nav class="navbar navbar-expand-lg sticky-top">
+            <nav class="navbar sticky-top navbar-expand-lg">
                 <div class="container-fluid">
-
-                    <div>
-                        <a href="./index.html" ><input type="button" class="home" value="Home"/></a>
-                    </div>
-
-                  <div>
-                    <input type="button" value="Most Search Recipes" class="random" />
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="../images/logo.png" alt="logo"  class="rounded-circle navlogo">
+                      </a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle Navbar"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+          
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    
+                    <ul class="navbar-nav  mb-lg-0">
+                      <li class="nav-item">
+                        <div>
+                            <a href="./index.html" ><input type="button" class="home" value="Home"/></a>
+                        </div>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <input type="button" value="Most Search Recipes" class="random" />
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <input type="button" value="All Categories" class="categories" />
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <a href="./About Us.html" ><input type="button" class="about" value="About Us"/></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mx-auto"></div>
+                    <form class="form-inline my-lg-0">
+                        <div id="input-div">
+                            <input
+                                type="text"
+                                class="meal-input"
+                                placeholder="Enter recipe name..."
+                            />
+                            <input
+                                type="button"
+                                value="Search"
+                                class="search text-center btn-outline-warning"
+                            />
+                            <p id="error-text"></p>
+                        </div>
+                    </form>
                 </div>
-        
-                <div>
-                  <input type="button" value="All Categories" class="categories" />
-              </div>
-
-              <div>
-                <a href="./About Us.html" ><input type="button" class="about" value="About"/></a>
-            </div>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle Navbar"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <div class="mx-auto">
-                          
-                    </div>
-                </div>
-                <div id="input-div">
-                  <input
-                      type="text"
-                      class="meal-input"
-                      placeholder="Enter recipe name..."
-                  />
-                  <input
-                      type="button"
-                      value="Search"
-                      class="search text-center btn-outline-warning"
-                  />
-                  <p id="error-text"></p>
-              </div>
             </nav>
         </header>
 
         <!-- API SECTION -->
-        
+
         <div class="main my-5 g-4">
             <div
                 class="title text-center p-2 col-12 col-sm-9 col-lg-7 col-xl-6 mx-auto fw-bold"
@@ -125,21 +135,19 @@
             </div>
         </div>
 
-        
+        <div class="container-fluid g-3">
+            <div id="div-list">
+                <ul class="list" id="list"></ul>
 
-        <div class="container-fluid  g-3">
-        <div id="div-list">
-        <ul class="list" id="list"></ul>
+                <div class="my-5">
+                    <h3 id="fav-tag">Saved Recipes</h3>
+                    <ul class="fav-list fav-list2" id="fav-list"></ul>
+                </div>
+            </div>
 
-        <div class="my-5">
-            <h3 id="fav-tag">Saved Recipes</h3>
-            <ul class="fav-list fav-list2" id="fav-list"></ul>
-        </div>
-        </div>
-
-        <div id="cat-list">
-        <ul class="categoryList" id="categoryList"></ul>
-        </div>
+            <div id="cat-list">
+                <ul class="categoryList" id="categoryList"></ul>
+            </div>
         </div>
 
         <!-- Footer -->
@@ -151,7 +159,7 @@
                     document.write(new Date().getFullYear());
                 </script>
                 Copyright:
-                <a class="text-white" href="index.html"
+                <a class="text-white" href="https://github.com/Accoder11/capstone2-with-api"
                     >Group7@KodeGo Project2</a
                 >
             </div>
@@ -163,12 +171,10 @@
         <!-- Javascript po ito -->
 
         <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"
         ></script>
-
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
         <script
             type="text/javascript"
