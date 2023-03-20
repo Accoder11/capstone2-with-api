@@ -1,655 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="../images/logo.png"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-    />
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <body>
-    <header>
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"><img class="img-fluid home-logo" src="../images/logo.png" alt="logo"></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle Navbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Homepage</title>
+        <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        />
+        <!-- Font Awesome -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../styles.css" />
+    </head>
+    <body>
+        <!-- BANNER TEXT WITH ANIMATION -->
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="mx-auto"></div>
-          <ul class="navbar-nav  mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Recipe
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="./vegetable.html"
-                    >Vegetable Recipe</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./beef.html">Beef Recipe</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./chicken.html"
-                    >Chicken Recipe</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pork.html">Pork Recipe</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./fish.html">Fish Recipe</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./desserts.html">Desserts</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="./About Us.html">About Us</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="./Contactus.html">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-    <!-- BANNER TEXT WITH ANIMATION -->
-
-    <div id="video-container" class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-md-8">
-          <video id="myVideo" loop autoplay muted>
-            <source src="../images/video2.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="col-12 col-md-4">
-          <div id="front-content" class="text-center">
-            <h1>HAK Food Blog</h1>
-            <a href="#categories" class="btn btn-warning btn-lg home-btn">Recipes</a>
-            <p class="blog-intro">
-              Welcome to our recipe blog website! Our goal is to provide you with a wide variety of delicious and easy-to-follow recipes that you can enjoy with your family and friends. Whether you're a seasoned cook or a beginner in the kitchen, we have something for everyone.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- BANNER TEXT WITH ANIMATION -->
-    <div class="main">
-      <div class="title text-center p-5 col-12 col-sm-9 col-lg-7 col-xl-6 mx-auto fw-bold">
-        <h1 class="display-2 bannerArrow" id="categories">Best Filipino Recipes</h1>
-      </div>
-    </div>
-    
-    <div class="frontpage my-5">
-      <h2>Categories</h2>
-    </div>
-
-<!-- div starts here -->
-<div class="container border rounded bg-black my-5 py-5 g-5">
-  <div class="row justify-content-center">
-    <div class="col-4 col-lg-4 col-md-6">
-      <div class="hover-box1">
-        <a href="beef.html" class="text-decoration-none">
-          <div class="overlay">
-            <div class="d-flex flex-column content">
-              <div class="flex-grow-1"></div>
-              <div class="d-lg-block d-none frontparagraph">
-                <p>Recipes of three major group of islands in the Philippines</p>
-                <span>click to see more <i class="bi bi-arrow-right-square-fill"></i></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <h2 class="text-center flex-grow-1">BEEF</h2>
-    </div>
-
-    <!-- box 2 -->
-    <div class="col-4 col-lg-4 col-md-6">
-      <!-- -->
-      <div class="hover-box2">
-        <a href="chicken.html" class="text-decoration-none">
-          <!--  -->
-          <div class="overlay">
-            <div class="d-flex flex-column content">
-              <div class="flex-grow-1"></div>
-              <div class="d-lg-block d-none frontparagraph">
-                <p>Recipes of three major group of islands in the Philippines</p>
-                <span>click to see more <i class="bi bi-arrow-right-square-fill"></i></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <h2 class="text-center flex-grow-1">CHICKEN</h2>
-    </div>
-
-        <!-- box 3 -->
-        <div class="col-4 col-lg-4 col-md-6">
-          <!-- -->
-          <div class="hover-box3">
-            <a href="vegetable.html" class="text-decoration-none">
-              <!--  -->
-              <div class="overlay">
-                <div class="d-flex flex-column content">
-                  <div class="flex-grow-1"></div>
-                  <div class="d-lg-block d-none frontparagraph">
-                    <p>
-                      Recipes of three major group of islands in the Philippines
-                    </p>
-
-                    <span
-                      >click to see more
-                      <i class="bi bi-arrow-right-square-fill"></i
-                    ></span>
-                  </div>
+        <div id="video-container" class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <video id="myVideo" loop autoplay muted>
+                        <source src="../images/video2.mp4" type="video/mp4" />
+                    </video>
                 </div>
-              </div>
-            </a>
-          </div>
-          <h2 class="text-center flex-grow-1">VEGETABLE</h2>
-        </div>
-      
-      <!-- end div 1 row -->
-
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-4 col-lg-4 col-md-6">
-          <!-- -->
-          <div class="hover-box4">
-            <a href="pork.html" class="text-decoration-none">
-              <!--  -->
-              <div class="overlay">
-                <div class="d-flex flex-column content">
-                  <div class="flex-grow-1"></div>
-                  <div class="d-lg-block d-none frontparagraph">
-                    <p>
-                      Recipes of three major group of islands in the Philippines
-                    </p>
-
-                    <span
-                      >click to see more
-                      <i class="bi bi-arrow-right-square-fill"></i
-                    ></span>
-                  </div>
+                <div class="col-12 col-md-4">
+                    <div id="front-content" class="text-center">
+                        <h1>HAK Food Blog</h1>
+                    
+                        <p class="blog-intro">
+                            Welcome to our recipe blog website! Our goal is to
+                            provide you with a wide variety of delicious and
+                            easy-to-follow recipes that you can enjoy with your
+                            family and friends. Whether you're a seasoned cook
+                            or a beginner in the kitchen, we have something for
+                            everyone.
+                        </p>
+                    </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <h2 class="text-center flex-grow-1">PORK</h2>
+            </div>
         </div>
 
-        <!-- box 5 -->
-        <div class="col-4 col-lg-4 col-md-6">
-          <!-- -->
-          <div class="hover-box5">
-            <a href="fish.html" class="text-decoration-none">
-              <!--  -->
-              <div class="overlay">
-                <div class="d-flex flex-column content">
-                  <div class="flex-grow-1"></div>
-                  <div class="d-lg-block d-none frontparagraph">
-                    <p>
-                      Recipes of three major group of islands in the Philippines
-                    </p>
+        <!-- Navbar -->
 
-                    <span
-                      >click to see more
-                      <i class="bi bi-arrow-right-square-fill"></i
-                    ></span>
-                  </div>
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg sticky-top">
+                <div class="container-fluid">
+
+                    <div>
+                        <a href="./index.html" ><input type="button" class="home" value="Home"/></a>
+                    </div>
+
+                  <div>
+                    <input type="button" value="Most Search Recipes" class="random" />
                 </div>
-              </div>
-            </a>
-          </div>
-          <h2 class="text-center flex-grow-1">FISH</h2>
-        </div>
-
-        <!-- box 6 -->
-        <div class="col-4 col-lg-4 col-md-6">
-          <!-- -->
-          <div class="hover-box6">
-            <a href="desserts.html" class="text-decoration-none">
-              <!--  -->
-              <div class="overlay">
-                <div class="d-flex flex-column content">
-                  <div class="flex-grow-1"></div>
-                  <div class="d-lg-block d-none frontparagraph">
-                    <p>
-                      Recipes of three major group of islands in the Philippines
-                    </p>
-
-                    <span
-                      >click to see more
-                      <i class="bi bi-arrow-right-square-fill"></i
-                    ></span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <h2 class="text-center flex-grow-1">DESSERTS</h2>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-      
-           <!-- Sample Featured Post -->
-
-           <div class="frontpage my-5">
-            <h2> Featured Post</h2>
-          </div>
-
-          <div class="container border rounded p-3 bg-black">
-           <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://www.knorr.com/content/dam/unilever/knorr_world/philippines/photography_and_pictures/pinoy-ulam-list-adobo-85776428-jpg.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Pork Adobo</h5>
-                  <p class="text-muted">Category: Pork</p>
-                  <p class="card-text">I always prepare my basic pork adobo recipe whenever my husband and I travel to visit our coffee farm 10 hours away. As you might know, Adobo keeps well and is best served...</p>
-                  <a href="#" class="btn btn-warning">Continue Reading...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/2048x1152/hd-aspect-1520972774-pork-chops-horizontal.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Quick and Easy Pan Fried Pork Chops</h5>
-                  <p class="text-muted">Category: Pork</p>
-                  <p class="card-text">A lot of people credit chicken as the most versatile, and easiest kind of meat to cook with. And while it’s true that the white meat tastes ...</p>
-                  <a href="#" class="btn btn-warning">Continue Reading...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://i.ytimg.com/vi/VBD6I_NX0z0/maxresdefault.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Pork Bistek Recipe</h5>
-                  <p class="text-muted">Category: Pork</p>
-                  <p class="card-text">If you know how to cook beef steak or bistek tagalog, then you can easily cook this pork steak recipe. This is a lot easier to cook since pork has a shorter...</p>
-                  <a href="#" class="btn btn-warning">Continue Reading...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://www.lutongbahayrecipe.com/wp-content/uploads/2021/10/lutong-bahay-tinolang-manok-640x381.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Tinolang Manok (Chicken Ginger Stew)</h5>
-                  <p class="text-muted">Category: Chicken</p>
-                  <p class="card-text">Tinolang manok or chicken ginger stew is a clear chicken soup dish that almost all Filipino families cook and serve...</p>
-                  <a href="#" class="btn btn-warning">Continue Reading...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://www.lutongbahayrecipe.com/wp-content/uploads/2021/10/Creamy-Sweet-Chicken-Adobo-678x381.png" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Creamy Sweet Chicken Adobo Recipe</h5>
-                  <p class="text-muted">Category: Chicken</p>
-                  <p class="card-text">Level up your adobo game with this newly discovered recipe. Chicken adobo made more special with Angel...</p>
-                  <a href="#" class="btn btn-warning">Continue Reading...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://www.lutongbahayrecipe.com/wp-content/uploads/2022/07/chicken-bicol-express-678x381.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Chicken Bicol Express</h5>
-                  <p class="text-muted">Category: Chicken</p>
-                  <p class="card-text">Chicken Bicol Express is a filipino stew dish that’s cooked in coconut milk, ginger, garlic, and onion. The shrimp...</p>
-                  <a href="#" class="btn btn-warning">Continue Reading...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://www.lutongbahayrecipe.com/wp-content/uploads/2020/08/braised-beef-shoulder-lutong-bahay-678x381.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Braised Beef Shoulder</h5>
-                  <p class="text-muted">Category: Beef</p>
-                  <p class="card-text">This juicy braised beef recipe is so tender and flavorful. The long-braising tenderizes this inexpensive cut of meat and...</p>
-                  <a href="#" class="btn btn-warning">Continue Reading...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://www.lutongbahayrecipe.com/wp-content/uploads/2021/02/lutong-bahay-recipe-beef-tocino-640x381.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Easy Beef Tocino</h5>
-                  <p class="text-muted">Category: Beef</p>
-                  <p class="card-text">Beef Tocino – Tocino is a popular breakfast recipe along with fried egg. It is a sweetened cured pork or beef or chicken...</p>
-                  <a href="#" class="btn btn-warning">Continue Reading...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://www.lutongbahayrecipe.com/wp-content/uploads/2021/02/lutong-bahay-homemade-beef-tapa-640x381.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Homemade Beef Tapa</h5>
-                  <p class="text-muted">Category: Beef</p>
-                  <p class="card-text">Tapsilog is our favorite breakfast. Tapsilog is every Filipinos’ favorite. The secret to Pinoys’ beef tapa is the freshness of the meat ...</p>
-                  <a href="#" class="btn btn-warning">Continue Reading...</a>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-
-          <!-- Latest Blogs -->
-
-          <div class="frontpage">
-            <h2> Blog Posts</h2>
-          </div>
-
-          <div class="container border rounded p-3 bg-black">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
-            <div class="card h-100 text-bg-light">
-            <img src="https://www.lutongbahayrecipe.com/wp-content/uploads/2022/12/avel-chuklanov-sedJnjrUMM8-unsplash1-1024x683.jpg" class="card-img" alt="...">
-            <div class="card-img-overlay">
-              <h3 class="card-title blog-title">What Makes Filipino Food So Special</h3>
-              <p class="card-text"><small>Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 text-bg-light">
-              <img src="https://www.lutongbahayrecipe.com/wp-content/uploads/2023/02/www-zanda-photography-RBdE3jv5y68-unsplash-1-1024x683.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h3 class="card-title blog-title">Why you need to start backyard farming: the benefits of growing your own organic vegetables</h3>
-                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-              </div>
-          </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 text-bg-light">
-              <img src="https://www.lutongbahayrecipe.com/wp-content/uploads/2021/02/lutong-bahay-munggo-on-fridays-2.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h3 class="card-title blog-title">Fascinating Facts on Why Munggo is Usually Served on Friday</h3>
-                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-              </div>
-          </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 text-bg-light">
-              <img src="https://i0.wp.com/www.angsarap.net/wp-content/uploads/2015/11/Bagnet-Wide-2.jpg?resize=720%2C480&ssl=1" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h3 class="card-title blog-title">Best Places for Filipino Cuisine: Where to Find It Today</h3>
-                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-              </div>
-          </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 text-bg-light">
-              <img src="https://www.seriouseats.com/thmb/sNOqOuOaiILj05PSuunyT3FuyPY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Filipino-Features-Soups-and-Stews-1e81ba12ce10481caf3ff58981c347ab.jpg" class="card-img img-fluid" alt="...">
-              <div class="card-img-overlay">
-                <h3 class="card-title blog-title">5 Interesting Secrets that Makes Filipino Food Wonderful</h3>
-                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-              </div>
-          </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 text-bg-light">
-              <img src="https://img-global.cpcdn.com/recipes/7ab352c299aa677e/680x482cq70/green-beans-in-spicy-coconut-milk-filipino-gising-gising-recipe-main-photo.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h3 class="card-title blog-title">The Best Herbs and Spices of the Philippines and Where to Find Them</h3>
-                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-              </div>
-          </div>
-          </div>
-            </div>
-          </div>
-      
-         
-
-
-
-
-           
-
-
-
-       <!-- Footer -->
-    <footer
-    class="container-fluid mt-5 text-center"
-  >
-    <!-- Grid container -->
-    <div class="container-fluid p-5">
-      <!-- Section: Social media -->
-      <section class="row row-cols-3 mb4">
-        <div class="col-4">
-          <h3 class="display-6">Ready to cook?</h3>
-          <h4 class="py-2">Sign up for our weekly newsletters!
-          </h4>
-          <section>
-            <form class="p-3 rounded-3 bg-white">
-              <!-- Name input -->
-              <div class="form-outline my-3">
-                <input type="text" id="form5Example1" class="form-control" />
-                <label class="form-label" for="form5Example1">Name</label>
-              </div>
-            
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                <input type="email" id="form5Example2" class="form-control" />
-                <label class="form-label" for="form5Example2">Email address</label>
-              </div>
-            
-              <!-- Checkbox -->
-              <div class="form-check d-flex justify-content-center mb-4">
-                <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
-                <label class="form-check-label" for="form5Example3">
-                  I have read and agree to the terms
-                </label>
-              </div>
-              <button type="submit" class="btn btn-warning btn-block mb-4">Subscribe</button>
-            </form>
-      </section>
-        </div>
-      
         
-      <!-- Section: Social media -->
+                <div>
+                  <input type="button" value="All Categories" class="categories" />
+              </div>
+
+              <div>
+                <a href="./About Us.html" ><input type="button" class="about" value="About"/></a>
+            </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle Navbar"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <div class="mx-auto">
+                          
+                    </div>
+                </div>
+                <div id="input-div">
+                  <input
+                      type="text"
+                      class="meal-input"
+                      placeholder="Enter recipe name..."
+                  />
+                  <input
+                      type="button"
+                      value="Search"
+                      class="search text-center btn-outline-warning"
+                  />
+                  <p id="error-text"></p>
+              </div>
+            </nav>
+        </header>
+
+        <!-- API SECTION -->
         
-        <div class="col-3 justify-content-center my-4"> 
-            <section>
-              <h4>Useful Links</h4>
-              <ul>
-                
-                <li><a href="fish.html">Fish Recipes</a> </li>
-                <li><a href="beef.html">Beef Recipes</a> </li>
-                <li><a href="pork.html">Pork Recipes</a> </li>
-                <li><a href="fish.html">Chicken Recipes</a> </li>
-                <li><a href="vegetable.html">Vegetables Recipes</a> </li>
-                <li><a href="desserts.html">Desserts Recipes</a> </li>
+        <div class="main my-5 g-4">
+            <div
+                class="title text-center p-2 col-12 col-sm-9 col-lg-7 col-xl-6 mx-auto fw-bold"
+            >
+                <h1 class="display-5" id="main">
+                    Search/Share Your Favorite Recipes
+                </h1>
+            </div>
+        </div>
 
-                <li><a href="About Us.html">About Us</a> </li>
-                <li><a href="Contactus.html">Contact Us</a> </li>
-                <li><a href="privacy.html"> Privacy Policy</h4></a></li>
-                <li><a href="terms.html">Terms and Condition</h4></a></li>
-                
-              </ul>
-            </section>
-          </div>
-          <div class="col-5">
-            <div class="row justify-content-center my-3">
-            
-              <h4>LET’S BE FRIENDS!</h4>
-        <!-- Facebook -->
-        <a
-          class="btn btn-primary btn-floating m-1"
-          style="background-color: #3b5998"
-          href="https://www.facebook.com/"
-          target="_blank"
-          role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-
-        <!-- Twitter -->
-        <a
-          class="btn btn-primary btn-floating m-1"
-          style="background-color: #55acee"
-          href="https://twitter.com/"
-          target="_blank"
-          role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
-
-        <!-- Google -->
-        <a
-          class="btn btn-primary btn-floating m-1"
-          style="background-color: #dd4b39"
-          href="https://www.google.com/"
-          target="_blank"
-          role="button"
-          ><i class="fab fa-google"></i
-        ></a>
-
-        <!-- Instagram -->
-        <a
-          class="btn btn-primary btn-floating m-1"
-          style="background-color: #ac2bac"
-          href="https://www.instagram.com/"
-          target="_blank"
-          role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-
-        <!-- Github -->
-        <a
-          class="btn btn-primary btn-floating m-1"
-          style="background-color: #333333"
-          href="https://github.com/"
-          target="_blank"
-          role="button"
-          ><i class="fab fa-github"></i
-        ></a>
-
-        <!-- Linkedin -->
-        <a
-          class="btn btn-primary btn-floating m-1"
-          style="background-color: #0082ca"
-          href="https://www.linkedin.com/login"
-          target="_blank"
-          role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-      </div>
-
-      <!-- other brands logos -->
-
-      <div class="row mt-5 p-3 g-2 mx-auto">
-        <h4>Other brands</h4>
-        <div class="col"><a href="https://www.w3schools.com/html/"><img class="logo img-fluid w-100" src="../images/316135546_698529798205445_4666327235168888404_n (1).jpg" alt=""></a></div>
-        <div class="col"><a href="https://www.w3schools.com/html/"><img class="logo img-fluid w-100" src="../images/316259498_675021300910878_1275092416952552660_n.jpg" alt=""></a></div>
-        <div class="col"><a href="https://www.w3schools.com/html/"><img class="logo img-fluid w-100" src="../images/logo7.jpeg" alt=""></a></div>
-        <div class="col"><a href="https://www.w3schools.com/html/"><img class="logo img-fluid w-100" src="../images/favicon.png" alt=""></a></div>
-        
-      </section>
-    </div>
-    </div>
-  </div>
-    
         
 
-    <!-- Copyright -->
-    <div class="text-center p-3 bg-black">
-      &copy;<script>document.write(new Date().getFullYear())</script> Copyright:
-      <a class="text-white" href="index.html">Group7@KodeGo Project2</a>
-    </div>
-    
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
+        <div class="container-fluid  g-3">
+        <div id="div-list">
+        <ul class="list" id="list"></ul>
 
-  <!-- Javascript po ito -->
+        <div class="my-5">
+            <h3 id="fav-tag">Saved Recipes</h3>
+            <ul class="fav-list fav-list2" id="fav-list"></ul>
+        </div>
+        </div>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"
-  ></script>
+        <div id="cat-list">
+        <ul class="categoryList" id="categoryList"></ul>
+        </div>
+        </div>
 
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
-  ></script>
-  <script src="../project.js"></script>
-</body>
+        <!-- Footer -->
+        <footer class="container-fluid mt-5 text-center">
+            <!-- Copyright -->
+            <div class="text-center p-3 bg-black">
+                &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                Copyright:
+                <a class="text-white" href="index.html"
+                    >Group7@KodeGo Project2</a
+                >
+            </div>
+
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+        <!-- Javascript po ito -->
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+        ></script>
+        <script src="../project.js"></script>
+    </body>
 </html>
-
-
